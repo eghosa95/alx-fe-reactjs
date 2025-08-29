@@ -10,7 +10,7 @@ export default function UserProfile(props) {
 
 
   const nameStyle = {
-    color: "#1d4ed8",
+    color: "blue",
     fontSize: 22,
     margin: "0 0 8px 0",
   };
