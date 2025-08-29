@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
+import Counter from "./components/Counter";
 
 export default function App() {
   const appStyle = {
@@ -14,6 +15,7 @@ export default function App() {
     <div style={appStyle}>
       <Header />
       <MainContent />
+      <Counter />
       <Footer />
     </div>
   );
