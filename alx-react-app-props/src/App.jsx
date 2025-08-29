@@ -1,22 +1,14 @@
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
-import Counter from "./components/Counter";
+import ProfilePage from "./ProfilePage";
+import { UserContext } from "./UserContext";
 
-export default function App() {
-  const appStyle = {
-    background: "#f3f4f6",
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-  };
+function App() {
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
-    <div style={appStyle}>
-      <Header />
-      <MainContent />
-      <Counter />
-      <Footer />
-    </div>
+    <UserContext.Provider value={userData}>
+      <ProfilePage />
+    </UserContext.Provider>
   );
 }
+
+export default App;
