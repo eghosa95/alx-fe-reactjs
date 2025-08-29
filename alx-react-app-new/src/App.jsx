@@ -1,19 +1,20 @@
-import UserProfile from './components/UserProfile';
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
 export default function App() {
-  return (
-    <div>
-      <UserProfile 
-        name="Alice" 
-        age="25" 
-        bio="Loves hiking and photography" 
-      />
+  const appStyle = {
+    background: "#f3f4f6",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  };
 
-      <UserProfile 
-        name="John Doe" 
-        age="30" 
-        bio="Enjoys coding, traveling, and coffee" 
-      />
+  return (
+    <div style={appStyle}>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
