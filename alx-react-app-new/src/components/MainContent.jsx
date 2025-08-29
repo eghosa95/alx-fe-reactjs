@@ -58,6 +58,9 @@ export default function MainContent() {
           bio="Frontend dev who enjoys CSS art and coffee tasting."
         />
       </div>
+      <p style={textStyle}>
+        I love to visit New York, Paris, and Tokyo.
+      </p>
     </main>
   );
 }
